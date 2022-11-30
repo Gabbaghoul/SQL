@@ -1,0 +1,82 @@
+DATABASE SCHEMA
+marvels26 rows
+ID (PK)INTEGER
+nameTEXT
+popularityINTEGER
+alignmentTEXT
+genderTEXT
+height_mNUMERIC
+weight_kgNUMERIC
+hometownTEXT
+intelligenceINTEGER
+strengthINTEGER
+speedINTEGER
+durabilityINTEGER
+energy_ProjectionINTEGER
+fighting_SkillsINTEGER
+QUERY RESULTS
+name	gender	height_m	weight_kg
+Wolverine	Male	1.6	88.46
+Jean Greay	Female	1.68	52.16
+Kitty Pryde	Female	1.68	50
+Rogue	Female	1.73	54.43
+Nightcrawler	Male	1.75	73
+Spider Man	Male	1.78	75.75
+Emma Frost	Female	1.78	65
+Storm	Female	1.8	66
+Daredevil	Male	1.83	91
+Professor X	Male	1.83	86
+Punisher	Male	1.85	91
+Magneto	Male	1.88	86.18
+Gambit	Male	1.88	81
+Captain America	Male	1.88	108
+Ghost Rider	Male	1.88	99
+Cyclops	Male	1.9	88
+Venon	Male	1.9	118
+Green Goblin	Male	1.93	174.63
+Loki	Male	1.93	238.14
+Silver Surfer	Male	1.93	102
+Iron Man	Male	1.98	102.58
+Thor	Male	1.98	290.3
+Thanos	Male	2.01	446.79
+Doctor Doom	Male	2.01	188.24
+Hulk	Male	2.44	635.29
+Juggernaut	Male	2.87	862
+gender	avg(height_m)	max(height_m)	min(height_m)	avg(weight_kg)	max(weight_kg)	min(weight_kg)
+Female	1.734	1.8	1.68	57.51800000000001	66	50
+Male	1.954285714285714	2.87	1.6	196.44571428571427	862	73
+name	height_m	weight_kg
+Hulk	2.44	635.29
+Thanos	2.01	446.79
+Juggernaut	2.87	862
+name	strength
+Hulk	7
+Thor	7
+Thanos	7
+Rogue	7
+Silver Surfer	7
+Juggernaut	7
+Iron Man	6
+Loki	5
+Spider Man	4
+Wolverine	4
+Green Goblin	4
+Doctor Doom	4
+Emma Frost	4
+Ghost Rider	4
+Venon	4
+Magneto	3
+Captain America	3
+Daredevil	3
+Punisher	3
+Jean Greay	2
+Storm	2
+Nightcrawler	2
+Gambit	2
+Cyclops	2
+Kitty Pryde	2
+Professor X	2
+strength	physical_strength
+4	average
+7	strong
+2	weak
