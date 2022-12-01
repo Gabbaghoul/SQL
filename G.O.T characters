@@ -1,0 +1,24 @@
+DATABASE SCHEMA
+game_of_thrones_warriors  10 rows
+character_id (PK)INTEGER
+full_nameTEXT
+house_bannerTEXT
+personal_ratingINTEGER
+
+who_is_left 10 rows
+character_id (PK)INTEGER
+alive_or_deadTEXT
+house_standsTEXT
+
+QUERY RESULTS
+full_name	alive_or_dead	house_stands	personal_rating
+Arthur Dane	dead	        no	        10
+Barristan Selmy	dead	        no	        10
+Jamie Lannister	dead	        yes	        9
+Greywom	        alive	        no	        9
+Bron	        alive	        yes	        9
+Brienne Tarth	alive	        yes	        9
+Tormund	        alive	       NULL	        9
+Robert B.     	dead	        no	        8
+Jon Snow	alive	        yes	        8
+Ned Stark	dead	        yes	        7
