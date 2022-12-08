@@ -1,0 +1,19 @@
+/* Using the JOIN command in sql to combine databases about Game of Thrones*/
+
+SELECT full_name, alive_or_dead, house_stands, personal_rating FROM game_of_thrones_warriors
+join who_is_left
+on game_of_thrones_warriors.character_id = who_is_left.character_id
+order by personal_rating desc;
+
+QUERY RESULTS
+full_name	alive_or_dead	house_stands	personal_rating
+Arthur Dane	dead	        no	        10
+Barristan Selmy	dead	        no	        10
+Jamie Lannister	dead	        yes	        9
+Greywom	        alive	        no	        9
+Bron	        alive	        yes	        9
+Brienne Tarth	alive	        yes	        9
+Tormund	        alive	       NULL	        9
+Robert B.     	dead	        no	        8
+Jon Snow	alive	        yes	        8
+Ned Stark	dead	        yes	        7
