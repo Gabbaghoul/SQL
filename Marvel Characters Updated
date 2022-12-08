@@ -1,0 +1,27 @@
+/*Using the data  from  http://marvel.wikia.com/Main_Page
+ and data from http://observationdeck.io9.com/something-i-found-marvel-character-popularity-poll-cb-1568108064 
+ and power grid data from http://marvel.wikia.com/Power_Grid#Power
+ Collected by: https://www.khanacademy.org/profile/Mentrasto/. 
+I used the aggregate functions to find the average, max, and min-height/weight for both genders in the marvel universe. 
+I also queried the data with filter and case functions to sort out a power ranking for physical strength.*/
+
+/*average/max/min height and weight for both genders in Marvel*/
+
+Select name, gender, height_m, weight_kg from marvels 
+order by height_m;
+Select gender, avg(height_m), max(height_m), min(height_m), avg(weight_kg), max(weight_kg), min(weight_kg) from marvels 
+group by gender;
+select name, height_m, weight_kg from marvels where height_m >1.99 and weight_kg >200;
+
+/*rating strength for marvel characters*/
+
+select name,strength from marvels
+order by strength desc;
+select strength,
+case
+when strength >= 5 then "strong"
+when strength <= 2 then "weak"
+else "average"
+end as "physical_strength" from marvels
+group by physical_strength;
+
