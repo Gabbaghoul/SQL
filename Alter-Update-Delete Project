@@ -1,0 +1,21 @@
+Create Table Pacman (id integer primary key, name text, scores integer);
+Insert into Pacman Values 
+(1, "Gab","857");
+Insert into Pacman Values
+(2, "Mo", "843");
+Insert into Pacman Values 
+(3, "steph", "741");
+Insert into Pacman Values
+(4, "Marc", "850");
+
+Select * from Pacman;
+ Alter table Pacman add Date text;
+ select * from Pacman;
+ Update Pacman set date = "Monday" where scores = 857;
+ Update Pacman set date = "Monday" where scores = 843;
+ Update Pacman set date = "Wednesday" where scores = 741;
+ Update Pacman set date = "Tuesday" where scores = 850;
+ select * from Pacman;
+ delete from pacman where name = "steph";
+ Select * from Pacman;
+ 
