@@ -1,0 +1,11 @@
+SELECT * FROM superstore ORDER BY price;
+
+SELECT AVG(price), item_name FROM superstore
+ORDER BY item_name;
+
+SELECT AVG(price), category FROM superstore
+Where category = 'Kitchen Supplies'
+ORDER BY category;
+
+SELECT COUNT(average_rating), item_name FROM superstore WHERE average_rating  >= 4.2
+Group by item_name;
