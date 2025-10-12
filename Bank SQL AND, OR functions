@@ -1,0 +1,7 @@
+SELECT product_id, product_name, product_type From bank_products;
+
+SELECT product_name, product_type FROM bank_products 
+where product_type = 'Checking' OR product_type = 'Savings';
+
+SELECT product_name, product_type, interest_rate, monthly_fee FROM bank_products
+WHERE product_type = 'Savings' AND interest_rate >= 0.75 AND monthly_fee = 0;
